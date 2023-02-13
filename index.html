@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Base apparel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="first-div">
+      <img class="logo-img" src="images/logo.svg" alt="" />
+      <h1 class="first-h1">We're</h1>
+      <h1>coming</h1>
+      <h1>soon</h1>
+      <p>
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our
+        launch deals.
+      </p>
+      <form name="form">
+      <input id="mail-input" type="text" placeholder="Email Adress" />
+      <img class="error" src="images/icon-error.svg" alt="" />
+      <button id="mail-btn" type="button"><img src="images/icon-arrow.svg" alt="" /></button>
+      <p class="under-input">Please provide valid Email</p>
+      </form>
+    </div>
+
+
+    <picture>
+        <source media="(min-width: 800px)" srcset="images/hero-desktop.jpg" sizes="">
+        <source media="(min-width: 300px)" srcset="images/hero-mobile.jpg" sizes="">
+        <img class="woman-img" src="images/hero-desktop.jpg" alt="">
+    </picture>
+    <img class="for-mobile" class="logo-img" src="images/logo.svg" alt="" />
+
+    <script src="script.js"></script>
+  </body>
+</html>

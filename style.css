@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    background-image: url('images/bg-pattern-desktop.svg');
+    min-height: 100vh;
+    font-family: 'Josefin Sans';
+}
+
+.logo-img {
+    padding: 4rem 0 7rem 10rem;
+}
+
+.first-h1 {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+h1 {
+    padding: 0 0 0 10rem;
+    font-size: 60px;
+    color: hsl(0, 6%, 24%);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 600;
+}
+
+p {
+    color: hsl(0, 36%, 70%);
+    padding: 1rem 23rem 0.5rem 10rem;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+input {
+    margin: 1rem 0 0 10rem;
+    padding: 1rem 10rem 1rem 2rem;
+    border-radius: 2rem;
+    border-color: hsl(0, 36%, 70%);
+    position: absolute;
+}
+
+.error {
+    position: absolute;
+    margin: 30px 0 0 420px;
+    display: none;
+}
+
+button {
+    position: absolute;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    border: 0;
+    background-color: hsl(0, 74%, 74%);
+    cursor: pointer;
+    margin: 13px 0 0 450px;
+}
+
+.under-input {
+    padding-top: 80px;
+    padding-left: 200px;
+    display: none;
+}
+
+button:hover {
+    background-color: hsl(0, 80%, 86%);
+}
+
+.for-mobile {
+    display: none;
+}
+
+
+@media (max-width: 800px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .for-mobile {
+        display: block;
+        width: 60%;
+        margin: 2rem 2rem;
+    }
+
+    .logo-img {
+        display: none;
+        justify-content: center;
+    }
+
+    .woman-img {
+        width: 100%;
+        margin: 0 0 2rem 0;
+    }
+
+    input {
+        margin: 0 0 0 4rem;
+
+    }
+
+    button {
+        margin: 0 0 0 22rem;
+
+    }
+
+    h1 {
+        padding: 0 20px 0 50px;
+        margin-left: 3rem;
+    }
+
+    p {
+        width: 400px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin: 1rem 0 2rem 1rem;
+    }
+
+    .first-div {
+        max-width: 300px;
+        height: 500px;
+        margin-bottom: 2rem;
+    }
+
+    .error {
+        margin: 1rem 0 0 20rem;
+    }
+
+    .under-input {
+        padding: 5rem 0 0 4rem;
+    }
+
+
+}
